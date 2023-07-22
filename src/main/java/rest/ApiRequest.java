@@ -5,7 +5,6 @@ import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.util.EntityUtils;
-
 import java.io.IOException;
 
 public class ApiRequest {
@@ -19,7 +18,7 @@ public class ApiRequest {
         return result;
     }
 
-    public static int getSAtatus(String url) {
+    public static int getStatus(String url) {
         return httpResponsE(url).getStatusLine().getStatusCode();
     }
 
